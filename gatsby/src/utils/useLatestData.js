@@ -21,7 +21,7 @@ export default function useLatestData() {
   const [slicemasters, setSlicemasters] = useState();
   // fetch the data from the GraphQL endpoint
   useEffect(function () {
-    console.log('FETCHING DATA');
+    // console.log('FETCHING DATA');
     // when the component loads (aka mounts), fetch the data
     fetch(process.env.GATSBY_SANITY_GRAPHQL_ENDPOINT, {
       method: 'POST',
@@ -52,7 +52,7 @@ export default function useLatestData() {
         setSlicemasters(res.data.StoreSettings.slicemaster);
       })
       .catch((err) => {
-        console.log('Wooops!');
+        // console.log('Wooops!');
         console.log(err);
       });
   }, []);

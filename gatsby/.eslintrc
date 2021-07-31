@@ -1,0 +1,21 @@
+{
+  "extends": ["wesbos"],
+  "rules": {
+    "no-console": 0,
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "either"
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 2
+      }
+    ]
+  }
+}

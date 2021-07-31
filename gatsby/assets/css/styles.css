@@ -1,0 +1,60 @@
+/* add css custom properties */
+:root {
+  --main-font: 'Krub', sans-serif;
+
+  /* theme */
+  --primary-color: #ffc107;
+  --secondary-color: #0097a7;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gray-color: #757575;
+
+  /* breakpoints */
+  --phone-breakpoint: 480px;
+  --tablet-breakpoint: 768px;
+  --desktop-breakpoint: 1000px;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* most browsers have default font-size of 16px but let's be explicit */
+  font-size: 62.5%; /* 62.5% of 16px is 10px, which makes 1rem = 10px which makes future rem measurements base 10 which make math simple */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 1.6rem; /* we set our base font off our root element so 10 * 1.6 = 16px */
+  background-color: var(--white-color);
+}
+
+/* responsive images */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+
+/* Our app will be centered */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
